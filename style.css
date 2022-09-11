@@ -121,6 +121,7 @@ h2 {
 
 .section_one {
   background: var(--color-Bright-orange);
+  border-radius: 10px 0 0 10px;
 }
 
 .section_two {
@@ -129,6 +130,7 @@ h2 {
 
 .section_three {
   background: var(--color-Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
 }
 
 @media all and (max-width: 489px) {
@@ -136,5 +138,12 @@ h2 {
   .section_two,
   .section_three {
     height: 350px;
+  }
+  .section_one {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .section_three {
+    border-radius: 0 0 10px 10px;
   }
 }
